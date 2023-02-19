@@ -43,5 +43,5 @@ Enter the symptoms you are suffering from in the search bar.
 
 The app will predict the disease based on the inputted symptoms.
 
-#Credits
+# Credits
 This app and model was developed by **Omanshu**
