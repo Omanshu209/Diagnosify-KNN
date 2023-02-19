@@ -1,7 +1,7 @@
 # Disease Prediction App
 
 This is a Python-based Disease Prediction App that predicts diseases based on the symptoms inputted by the user. **The app uses a K-Nearest Neighbors Classifier algorithm [Machile Learning {A branch of AI}] to predict the disease based on the symptoms**
-
+![Screenshot_2023-02-19-16-35-42-829](https://user-images.githubusercontent.com/114089324/219944078-5c6afa0d-aafd-4471-8181-033aba979dfc.jpeg)
 ## Requirements
 1)Python 3
 
