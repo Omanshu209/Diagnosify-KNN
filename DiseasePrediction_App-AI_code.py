@@ -2,8 +2,6 @@ import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 from kivymd.app import MDApp
 from kivy.lang import Builder
-from kivymd.uix.screenmanager import MDScreenManager
-from kivymd.uix.screen import MDScreen
 
 df=pd.read_csv('training.csv')
 df=df.drop('Unnamed: 133',axis=1)
@@ -160,6 +158,7 @@ class MainApp(MDApp):
 		if self.root.ids.search_bar.text in symptoms:
 			self.root.ids.sympt.text+=f"•{self.root.ids.search_bar.text}\n"
 			symptoms[symptoms.index(self.root.ids.search_bar.text)]=1
+			self.root.ids.search_bar.text = ""
 			
 	def prognose(self):
 		global symptoms
