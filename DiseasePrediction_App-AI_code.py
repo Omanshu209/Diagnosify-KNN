@@ -21,6 +21,7 @@ prev_symptoms = symptoms[:]
 #kivy design language
 KV = """
 MDScreen:
+	
 	MDTextField:
 		id:search_bar
 		mode:'round' 
@@ -46,20 +47,16 @@ MDScreen:
 		elevation:7
 		padding:25
 		spacing:25
-		orientation:'vertical' 
-		MDLabel:
-			size_hint_y: None 
-			bold:True 
-			color:(1,.5,0,1)
-			text:' | Symptoms You Suffer With | '
-			halign:'center' 
-			outline_color:(0,1,0)
-			outline_width:7
-			font_size:25
+		orientation:'vertical'
+		
+		Image:
+			source:"assets/symptoms.png"
+			size_hint_y:.4
 
 		MDScrollView:
-			do_scroll_x:False 
+			do_scroll_x:False
 			do_scroll_y:True
+			
 			MDLabel:
 				id:sympt
 				size_hint_y: None
@@ -76,7 +73,8 @@ MDScreen:
 		elevation:7
 		padding:25
 		spacing:25
-		orientation:'vertical' 
+		orientation:'vertical'
+		
 		Image:
 			source:"assets/diagnosis.png"
 			size_hint_y:.4
@@ -84,6 +82,7 @@ MDScreen:
 		MDScrollView:
 			do_scroll_x:False 
 			do_scroll_y:True
+			
 			MDLabel:
 				id:diagnosis
 				size_hint_y: None
@@ -108,7 +107,8 @@ MDScreen:
 		elevation:7
 		padding:25
 		spacing:25
-		orientation:'vertical' 
+		orientation:'vertical'
+		
 		MDRoundFlatIconButton:
 			icon:'hospital-box' 
 			size_hint_y: None 
@@ -120,6 +120,7 @@ MDScreen:
 		MDScrollView:
 			do_scroll_x:False 
 			do_scroll_y:True
+			
 			MDLabel:
 				id:symp
 				size_hint_y: None
