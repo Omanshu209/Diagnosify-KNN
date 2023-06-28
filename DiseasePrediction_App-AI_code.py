@@ -77,15 +77,9 @@ MDScreen:
 		padding:25
 		spacing:25
 		orientation:'vertical' 
-		MDLabel:
-			size_hint_y: None 
-			bold:True 
-			color:(1,.5,0,1)
-			text:' | Diagnosis | '
-			halign:'center' 
-			outline_color:(0,1,0)
-			outline_width:7
-			font_size:35
+		Image:
+			source:"assets/diagnosis.png"
+			size_hint_y:.4
 
 		MDScrollView:
 			do_scroll_x:False 
