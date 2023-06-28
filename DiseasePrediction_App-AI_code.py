@@ -153,7 +153,7 @@ class MainApp(MDApp):
 	def showsymptoms(self):
 		self.root.ids.symp.text = "Symptoms You Can Enter in the Search Bar : \n"
 		for i,s in enumerate(symptoms):
-			if s!=1:
+			if s != 1:
 				self.root.ids.symp.text += f"{i+1} ) {s}\n"
 				
 	def selectsymptom(self):
