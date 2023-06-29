@@ -1,0 +1,116 @@
+MDScreen:
+	
+	MDTextField:
+		id:search_bar
+		mode:'round' 
+		hint_text:'Enter Symptom...'
+		icon_left:'hospital-box' 
+		pos_hint:{'center_y':.96}
+		size_hint:.9,None
+		padding:15
+		on_text:
+			app.selectsymptom()
+			
+	MDRoundFlatButton:
+		text:'Clear' 
+		pos_hint:{'center_x':.95,'center_y':.96}
+		size_hint:.09,.004
+		on_release: 
+			app.clr()
+	
+	MDCard:
+		id:patient_symptoms
+		size_hint:.25,.6
+		pos_hint:{'center_x':.45,'center_y':.57}
+		elevation:7
+		padding:25
+		spacing:25
+		orientation:'vertical'
+		
+		Image:
+			source:"assets/symptoms.png"
+			size_hint_y:.4
+
+		MDScrollView:
+			do_scroll_x:False
+			do_scroll_y:True
+			
+			MDLabel:
+				id:sympt
+				size_hint_y: None
+				height: self.texture_size[1]
+				text_size: self.width, None
+				padding: 10, 10
+				bold:True 
+				color:(0,0,0.6,1)
+				text:''
+				halign:'center' 
+	MDCard:
+		size_hint:.35,.78
+		pos_hint:{'center_x':.8,'center_y':.47}
+		elevation:7
+		padding:25
+		spacing:25
+		orientation:'vertical'
+		
+		Image:
+			source:"assets/diagnosis.png"
+			size_hint_y:.4
+
+		MDScrollView:
+			do_scroll_x:False 
+			do_scroll_y:True
+			
+			MDLabel:
+				id:diagnosis
+				size_hint_y: None
+				height: self.texture_size[1]
+				text_size: self.width, None
+				padding: 10, 10
+				bold:True 
+				color:(0,0,0.6,1)
+				text:'NA'
+				halign:'center' 
+
+	MDRoundFlatButton:
+		text:'Diagnose' 
+		size_hint:.22,.15
+		pos_hint:{'center_x':.45,'center_y':.16}
+		on_release:app.diagnose()
+	
+	MDCard:
+		id:all_symptoms
+		size_hint:.25,.78
+		pos_hint:{'center_x':.14,'center_y':.47}
+		elevation:7
+		padding:25
+		spacing:25
+		orientation:'vertical'
+		
+		MDRoundFlatIconButton:
+			icon:'hospital-box' 
+			size_hint_y: None 
+			text:' | Symptoms..'
+			bold:True 
+			color:(1,.5,0,1)
+			on_release:app.showsymptoms()
+
+		MDScrollView:
+			do_scroll_x:False 
+			do_scroll_y:True
+			
+			MDLabel:
+				id:symp
+				size_hint_y: None
+				height: self.texture_size[1]
+				text_size: self.width, None
+				padding: 10, 10
+				bold:True 
+				text:'Press The Button Above'
+				halign:'center' 
+	
+	MDRectangleFlatButton:
+		text:'D   e   v   e   l   o   p   e   d       B   y       O   m   a   n   s   h   u' 
+		pos_hint:{'center_x':.5,'center_y':0.03}
+		size_hint:1,.03
+		bold:True
