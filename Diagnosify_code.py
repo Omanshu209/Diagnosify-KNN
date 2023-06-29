@@ -4,7 +4,7 @@ from kivymd.app import MDApp
 from kivy.lang import Builder
 
 #preparing the data
-df = pd.read_csv('training.csv')
+df = pd.read_csv('assets/training.csv')
 df = df.drop('Unnamed: 133',axis=1)
 X = df.drop('prognosis',axis = 1).copy().values
 y = df['prognosis'].copy().values
