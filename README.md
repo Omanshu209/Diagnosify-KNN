@@ -32,7 +32,7 @@ Open the terminal in the cloned directory.
 
 Run the following command:
 ```
-python3 DiseasePrediction_App-AI_code.py
+python3 Diagnosify_code.py
 ```
 The Disease Prediction App will start.
 
