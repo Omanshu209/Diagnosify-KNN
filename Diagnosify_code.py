@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 from kivymd.app import MDApp
 from kivy.lang import Builder
-from kivymd.uix.list import OneLineListItem
+from kivymd.uix.list import OneLineIconListItem,IconLeftWidget
 
 #preparing the data
 df = pd.read_csv('assets/training.csv')
@@ -30,14 +30,20 @@ class MainApp(MDApp):
 	def on_start(self):
 		for i,s in enumerate(symptoms):
 			self.root.ids.container.add_widget(
-				OneLineListItem(text=f"{i+1} ) {s}")
+				OneLineIconListItem(
+					IconLeftWidget(
+						icon = "ambulance"
+					),
+					text = s,
+					font_style = "Button"
+				)
 			)
 				
 	def selectsymptom(self):
 		global symptoms
-		if self.root.ids.search_bar.text in symptoms:
-			self.root.ids.sympt.text += f"• {self.root.ids.search_bar.text}\n"
-			symptoms[symptoms.index(self.root.ids.search_bar.text)] = 1
+		if self.root.ids.search_bar.text.lower() in symptoms:
+			self.root.ids.sympt.text += f"• {self.root.ids.search_bar.text.upper()[0] + self.root.ids.search_bar.text.lower()[1:]}\n"
+			symptoms[symptoms.index(self.root.ids.search_bar.text.lower())] = 1
 			self.root.ids.search_bar.text = ""
 			
 	def diagnose(self):
