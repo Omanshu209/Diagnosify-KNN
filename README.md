@@ -22,7 +22,7 @@ Install Python 3 from the official website.
 
 Install the required libraries using the following commands:
 ```
-pip install pandas==1.3.3 scikit-learn==1.0 kivy=2.0.0 kivymd==1.1.1
+pip install pandas==1.3.3 scikit-learn==1.0 kivy==2.0.0 kivymd==1.1.1
 ```
 ## Usage
 
