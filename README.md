@@ -2,7 +2,8 @@
 
 This is a Python-based Disease Prediction App that predicts diseases based on the symptoms inputted by the user. **The app uses a K-Nearest Neighbors Classifier algorithm [Machile Learning {A branch of AI}] to predict the disease based on the symptoms**
 
-![Screenshot_2023-06-28-22-31-55-188](https://github.com/Omanshu209/DiseasePredicting_App-ML/assets/114089324/7100bde6-39d7-4ef8-84cb-7985f8435d85)
+![Screenshot_2023-07-02-23-20-21-621](https://github.com/Omanshu209/Diagnosify_ML/assets/114089324/23180a29-56f5-443a-bc6b-5ca98b07f4a6)
+
 
 ## Requirements
 ```
@@ -24,6 +25,9 @@ Install the required libraries using the following commands:
 ```
 pip install pandas==1.3.3 scikit-learn==1.0 kivy==2.0.0 kivymd==1.1.1
 ```
+
+![Screenshot_2023-07-02-23-21-47-845](https://github.com/Omanshu209/Diagnosify_ML/assets/114089324/42ff8b52-0a17-465d-bf9e-baaa78994ada)
+
 ## Usage
 
 Clone the repository.
