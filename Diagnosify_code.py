@@ -59,7 +59,13 @@ class MainApp(MDApp):
 				if s != 1:
 					symptoms[i] = prev_symptoms[i]
 		except:
-			self.root.ids.diagnosis.text = 'ER' 
+			self.root.ids.diagnosis.text = 'ER'
+	
+	def changeTheme(self,active):
+		if active:
+			self.theme_cls.theme_style = "Dark"
+		else:
+			self.theme_cls.theme_style = "Light"
 			
 	def clr(self):
 		global symptoms
