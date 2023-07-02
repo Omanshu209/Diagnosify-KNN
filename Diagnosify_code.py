@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 from kivymd.app import MDApp
 from kivy.lang import Builder
+from kivymd.uix.list import OneLineListItem
 
 #preparing the data
 df = pd.read_csv('assets/training.csv')
@@ -25,12 +26,12 @@ class MainApp(MDApp):
 		self.theme_cls.background_palette = 'DeepPurple'
 		self.theme_cls.primary_palette = 'Cyan'
 		return Builder.load_file("Design.kv")
-		
-	def showsymptoms(self):
-		self.root.ids.symp.text = "Symptoms You Can Enter in the Search Bar : \n\n"
+	
+	def on_start(self):
 		for i,s in enumerate(symptoms):
-			if s != 1:
-				self.root.ids.symp.text += f"{i+1} ) {s}\n"
+			self.root.ids.container.add_widget(
+				OneLineListItem(text=f"{i+1} ) {s}")
+			)
 				
 	def selectsymptom(self):
 		global symptoms
@@ -58,7 +59,6 @@ class MainApp(MDApp):
 		self.root.ids.diagnosis.text = 'NA' 
 		self.root.ids.sympt.text = ''
 		self.root.ids.search_bar.text = ''
-		self.root.ids.symp.text = 'Press The Button Above'
 		
 if __name__ == '__main__':
 	MainApp().run()

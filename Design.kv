@@ -1,5 +1,4 @@
 <MagicButton@MagicBehavior+MDRoundFlatButton>
-<MagicIconButton@MagicBehavior+MDRoundFlatIconButton>
 
 MDScreen:
 	
@@ -19,7 +18,7 @@ MDScreen:
 		pos_hint:{'center_x':.95,'center_y':.96}
 		size_hint:.09,.004
 		on_release:
-			self.wobble() 
+			self.twist() 
 			app.clr()
 	
 	MDCard:
@@ -93,29 +92,16 @@ MDScreen:
 		spacing:25
 		orientation:'vertical'
 		
-		MagicIconButton:
-			icon:'hospital-box' 
-			size_hint_y: None 
-			text:' | Symptoms..'
-			bold:True 
-			color:(1,.5,0,1)
-			on_release:
-				self.twist()
-				app.showsymptoms()
-
+		Image:
+			source:"assets/health.png"
+			size_hint_y:.2
+		
 		MDScrollView:
 			do_scroll_x:False 
 			do_scroll_y:True
 			
-			MDLabel:
-				id:symp
-				size_hint_y: None
-				height: self.texture_size[1]
-				text_size: self.width, None
-				padding: 10, 10
-				bold:True 
-				text:'Press The Button Above'
-				halign:'center' 
+			MDList:
+            	id: container 
 	
 	MDRectangleFlatButton:
 		text:'D   e   v   e   l   o   p   e   d       B   y       O   m   a   n   s   h   u' 
