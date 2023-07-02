@@ -35,7 +35,9 @@ class MainApp(MDApp):
 						icon = "ambulance"
 					),
 					text = s,
-					font_style = "Button"
+					font_style = "Button",
+					theme_text_color = "Custom",
+					text_color = (0,.5,1,1)
 				)
 			)
 				
