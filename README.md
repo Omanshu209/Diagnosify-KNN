@@ -31,15 +31,15 @@ pip install pandas==1.3.3 scikit-learn==1.0 kivy==2.0.0 kivymd==1.1.1
 ## Usage
 
 Clone the repository.
-
+```
+git clone https://github.com/Omanshu209/Diagnosify_ML.git
+```
 Open the terminal in the cloned directory.
 
-Run the following command:
+Run the following command to start the app:
 ```
 python3 Diagnosify_code.py
 ```
-The Disease Prediction App will start.
-
 Enter the symptoms you are suffering from in the search bar.
 
 The app will predict the disease based on the inputted symptoms.
