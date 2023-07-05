@@ -1,6 +1,6 @@
 # Diagnosify 
 
-This is a Python-based Disease Prediction App that predicts diseases based on the symptoms inputted by the user. **The app uses a K-Nearest Neighbors Classifier algorithm [Machile Learning {A branch of AI}] to predict the disease based on the symptoms**
+This is a Python-based Disease Prediction App that predicts diseases based on the symptoms inputted by the user. **The app uses a K-Nearest Neighbors Classifier algorithm [Machile Learning (A branch of AI)] to predict the disease based on the symptoms**
 
 ![Screenshot_2023-07-02-23-20-21-621](https://github.com/Omanshu209/Diagnosify_ML/assets/114089324/23180a29-56f5-443a-bc6b-5ca98b07f4a6)
 
