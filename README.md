@@ -1,6 +1,6 @@
 # Diagnosify 
 
-This is a Python-based Disease Prediction App that predicts diseases based on the symptoms inputted by the user. **The app uses a K-Nearest Neighbors Classifier algorithm [Machile Learning (A branch of AI)] to predict the disease based on the symptoms**
+This is a Python-based app that predicts diseases based on the symptoms inputted by the user. **The app uses a `K-Nearest Neighbors Classifier algorithm` [Machile Learning (A branch of AI)] to predict the disease based on the symptoms**
 
 ![Screenshot_2023-07-02-23-20-21-621](https://github.com/Omanshu209/Diagnosify_ML/assets/114089324/23180a29-56f5-443a-bc6b-5ca98b07f4a6)
 
@@ -19,9 +19,9 @@ This is a Python-based Disease Prediction App that predicts diseases based on th
 ```
 ## Installation
 
-Install Python 3 from the official website.
+`Install Python 3` from the official website.
 
-Install the required libraries using the following commands:
+`Install the required libraries` using the following commands:
 ```
 pip install pandas==1.3.3 scikit-learn==1.0 kivy==2.0.0 kivymd==1.1.1
 ```
@@ -30,19 +30,19 @@ pip install pandas==1.3.3 scikit-learn==1.0 kivy==2.0.0 kivymd==1.1.1
 
 ## Usage
 
-Clone the repository.
+`Clone` the repository.
 ```
 git clone https://github.com/Omanshu209/Diagnosify_ML.git
 ```
-Open the terminal in the cloned directory.
+Open the `terminal` in the cloned directory.
 
-Run the following command to start the app:
+`Run` the following command to start the app:
 ```
 python3 Diagnosify_code.py
 ```
-Enter the symptoms you are suffering from in the search bar.
+`Enter the symptoms` you are suffering from in the search bar.
 
-The app will predict the disease based on the inputted symptoms.
+The `app will predict` the disease based on the inputted symptoms.
 
 # Credits
 This app and model was developed by **Omanshu**
