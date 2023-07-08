@@ -38,7 +38,7 @@ Open the `terminal` in the cloned directory.
 
 `Run` the following command to start the app:
 ```
-python3 Diagnosify_code.py
+python3 main.py
 ```
 `Enter the symptoms` you are suffering from in the search bar.
 
