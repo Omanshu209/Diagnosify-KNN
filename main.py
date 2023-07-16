@@ -58,7 +58,7 @@ class MainApp(MDApp):
 			for i,s in enumerate(symptoms):
 				if s != 1:
 					symptoms[i] = prev_symptoms[i]
-		except:
+		except Exception:
 			self.root.ids.diagnosis.text = 'ER'
 	
 	def changeTheme(self,active):
