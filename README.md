@@ -9,9 +9,7 @@ This is a Python-based app that predicts diseases based on the symptoms inputted
 ```
 1) Python 3
 
-2) pandas library (v1.3.3)
-
-3) scikit-learn library (v1.0)
+3) joblib library (v1.0.1)
 
 4) kivy library (v2.0.0)
 
@@ -27,7 +25,7 @@ pip install -r requirements.txt
 ```
 **OR**
 ```
-pip install pandas==1.3.3 scikit-learn==1.0 kivy==2.0.0 kivymd==1.1.1
+pip install joblib==1.0.1 kivy==2.0.0 kivymd==1.1.1
 ```
 
 ![Screenshot_2023-07-02-23-21-47-845](https://github.com/Omanshu209/Diagnosify_ML/assets/114089324/42ff8b52-0a17-465d-bf9e-baaa78994ada)
