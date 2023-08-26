@@ -1,4 +1,10 @@
-# Diagnosify 
+<div align = "center">
+  <h1>
+    <img src = "https://github.com/Omanshu209/Diagnosify_ML/assets/114089324/8f3634d1-1248-40e3-beb7-d4c5d626b5c5" width = "25px"/>
+    Diagnosify
+    <img src = "https://github.com/Omanshu209/Diagnosify_ML/assets/114089324/fcda409d-6d3d-4f29-bb4a-e82b9babb7cf" width = "22px"/>
+  </h1>
+</div>
 
 This is a Python-based app that predicts diseases based on the symptoms inputted by the user. **The app uses a `K-Nearest Neighbors Classifier algorithm` [Machile Learning (A branch of AI)] to predict the disease based on the symptoms**
 
